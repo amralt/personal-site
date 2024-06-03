@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.sand.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css" />
     <link rel="stylesheet" href="css/change-theme.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,9 +21,9 @@
         </li>
       </ul>
       <ul>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#my-projects">Projects</a></li>
-        <li><a href="#v">Contacts</a></li>
+        <li><a href="#contacts">Contacts</a></li>
       </ul>
 
       <ul class="icons">
@@ -41,16 +41,24 @@
 
     <main class="container">
 
-      <article class="main__about-me grid">
+      <article class="main__about-me grid" id="about">
         <img class="main__my-photo" alt="me" src="https://avatars.githubusercontent.com/u/112940374?v=4"/>
         <hgroup>
           <h2>Hello there!</h2>
-          My name is Amir and it is my first page about myself!
+            <P>  
+              My name is Amir I`m beginning software engineer from Omsk, Siberia.
+              I practice programming very often and become better and better in it. 
+              Now I work like plugin developer in small minecraft server <a href="http://cuboserver.net">cuboserver</a>   
+            </P>
+            </BR>
+            <h3>My stack:</h3>
+            <div class="main__my-stack overflow-auto"></div>
         </hgroup>    
+
       </article>
       
       
-      <div class="main__my-projects grid" id="my-projects"></div>
+      <div class="main__my-projects" id="my-projects"></div>
 
       <dialog id="dialog">
         <article>What??</article>
@@ -59,28 +67,14 @@
 
     </main>
 
-    <footer class="container" id="contacts">
-      <a href="https://telegram.com/AmirAltin">telegram</a>
+    <footer class="container grid" id="contacts">
+        <h3>My contacts:</h3>
+        <a href="https://telegram.com/AmirAltin">telegram</a>
+        <a href="https://github.com/amralt">Github</a>
     </footer>
 
     <script src="js/changeTheme.js">  </script>
     <script src="js/paste-information.js"></script>
-<script>
-
-      // const inputSubmit = document.getElementById("input-submit")
-      // const dialog =  document.getElementById("dialog")
-
-      // inputSubmit.addEventListener("click", () => {
-      //     dialog.showModal()
-      // })
-
-      const changeColorTheme = document.getElementById('nav__change-color-theme')
-      const html = document.getElementsByTagName('html')
-
-      changeColorTheme.addEventListener('click', () => {
-        html.dataTheme = "dark"
-      })
-
-    </script>
+    <script src="js/paste-stack.js">  </script>
   </body>
 </html>

@@ -1,14 +1,15 @@
 const articles = [
-    {title: "Article 0", content: "Content of Article 0.", imageUrl: "https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3A69ac37d72d2f7ceba6009d5bada94eabdc6ea3ad5bcdfd488ba7a5d1%2BIMAGE_TINY%2BIMAGE_TINY.1", imageAlt: "codeforces bot"},
-    {title: "Article 1", content: "Content of Article 1.", imageUrl: "", imageAlt: "fast-api"},
-    {title: "Article 2", content: "Content of Article 2.", imageUrl: "", imageAlt: "codeforces bot"},
-    // Add more articles as needed
+    {title: "Old static site", content: "Web site created with vanilia htmk, js, css about 'Twenty Thousand Leagues Under The Sea.' </BR> <a link='https://amralt.github.io/FAN-20K-LEAGUES-UNDER-WATER/'>link</a>", imageUrl: "/nautilius-preview.png", imageAlt: "fast-mark"},
+    {title: "Codeforces bot", content: "A telegram chatbot that knows how to make a training plan for algorithms and give out a list of tasks for the day.", imageUrl: "/codeforces-bot-preview.png", imageAlt: "codeforces bot"},
+    {title: "FastMark", content: "A web application that helps to automatically fill in images based on data from the table. </BR> <a link='https://fast-mark.github.io/main-app//'>link</a>", imageUrl: "/fast-mark-preview.png", imageAlt: "fast-mark"},
+    
+    // Add more articles
 ];
 
 // Function to create HTML for an article
 function createArticleHTML(article) {
     return `
-        <article class="article">
+        <article class="article main__project-article">
             <img class="" src="${article.imageUrl}" alt="${article.imageAlt}"/>
             <hgroup>
                 <h2>${article.title}</h2>

@@ -1,9 +1,9 @@
 
 .nav__avatar {
-  width: 3em;
-  height: 3em;
   border-radius: 50%;
   margin-left: 0.5em;
+  width: 3em;
+  height: 3em;
 }
 
 img {
@@ -11,4 +11,35 @@ img {
 
   max-width: 98%;
   max-height: 98%;
+}
+
+.small_image {
+  margin-left: 0.5em;
+  max-width: auto;
+  height: 5em;
+}
+
+.main__my-stack {
+display: flex;
+}
+
+.main__project-article{
+  min-width: 400px;
+}
+
+.main__my-projects {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-column-gap: 1.5%;
+  grid-row-gap: 3%;
+  /* justify-items: stretch;
+  align-items: stretch; */
+}
+
+@media (max-width: 767px) {
+ .main__my-projects {
+    grid-template-columns: 1fr; /* Изменяем количество колонок на 1 */
+  }
 }
