@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     imageUrls.forEach(url => {
         const imgElement = document.createElement('img');
-        imgElement.src = url;
+        imgElement.src = 'public' + url;
         imgElement.alt = "some framework"; // Provide a meaningful description for accessibility
         imgElement.className = "small_image"
 
