@@ -1,7 +1,7 @@
 const articles = [
-    {title: "Old static site", content: "Web site created with vanilia htmk, js, css about 'Twenty Thousand Leagues Under The Sea.' </BR> <a link='https://amralt.github.io/FAN-20K-LEAGUES-UNDER-WATER/'>link</a>", imageUrl: "/nautilius-preview.png", imageAlt: "fast-mark"},
-    {title: "Codeforces bot", content: "A telegram chatbot that knows how to make a training plan for algorithms and give out a list of tasks for the day.", imageUrl: "/codeforces-bot-preview.png", imageAlt: "codeforces bot"},
-    {title: "FastMark", content: "A web application that helps to automatically fill in images based on data from the table. </BR> <a link='https://fast-mark.github.io/main-app//'>link</a>", imageUrl: "/fast-mark-preview.png", imageAlt: "fast-mark"},
+    {title: "Old static site", content: "Web site created with vanilia htmk, js, css about 'Twenty Thousand Leagues Under The Sea.' </BR> <a link='https://amralt.github.io/FAN-20K-LEAGUES-UNDER-WATER/'>link</a>", imageUrl: "public/nautilius-preview.png", imageAlt: "fast-mark"},
+    {title: "Codeforces bot", content: "A telegram chatbot that knows how to make a training plan for algorithms and give out a list of tasks for the day.", imageUrl: "public/codeforces-bot-preview.png", imageAlt: "codeforces bot"},
+    {title: "FastMark", content: "A web application that helps to automatically fill in images based on data from the table. </BR> <a link='https://fast-mark.github.io/main-app//'>link</a>", imageUrl: "public/fast-mark-preview.png", imageAlt: "fast-mark"},
     
     // Add more articles
 ];
